@@ -77,7 +77,7 @@
     
 	@media screen and (max-width: 650px) {
 		.modal-popup {
-			height: 93vh;
+			height: 90vh;
 			width: 100vw;
 		}
 	}
