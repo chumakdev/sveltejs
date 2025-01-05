@@ -112,10 +112,10 @@
        -2px 0 #3E3A37,
         0 2px #3E3A37,
         0 -2px #3E3A37,
-        1px 1px #3E3A37,
-       -1px 1px #3E3A37, 
-        1px -1px #3E3A37,
-       -1px -1px #3E3A37;
+        2px 2px #3E3A37,
+       -2px 2px #3E3A37, 
+        2px -2px #3E3A37,
+       -2px -2px #3E3A37;
 		font-family: "Fira Sans", serif;
 	}
 
@@ -184,10 +184,10 @@
 		color: #FFF;
 		text-align: center;
 		text-shadow: 
-        4px 0 #3E3A37,
-       -4px 0 #3E3A37,
-        0 4px #3E3A37,
-        0 -4px #3E3A37,
+        3px 0 #3E3A37,
+       -3px 0 #3E3A37,
+        0 3px #3E3A37,
+        0 -3px #3E3A37,
         3px 3px #3E3A37,
        -3px 3px #3E3A37, 
         3px -3px #3E3A37,
@@ -284,10 +284,10 @@
        -2px 0 #017416,
         0 2px #017416,
         0 -2px #017416,
-        3px 3px #017416,
-       -3px 3px #017416, 
-        3px -3px #017416,
-       -3px -3px #017416;
+        2px 2px #017416,
+       -2px 2px #017416, 
+        2px -2px #017416,
+       -2px -2px #017416;
 	}
 
 	.popup-content__btn::before {
@@ -355,32 +355,42 @@
 
 	@media screen and (max-width: 650px) {
 		.popup-content__image img {
-			width: 250px;
+			width: 170px;
 		}
 		.popup-coin__icon img {
-			width: 60px;
+			width: 40px;
+		}
+		.popup-coin {
+			top: 15px;
+			left: 20px;
+		}
+		.popup-coin__icon {
+			left: -10px;
+			top: 55%;
 		}
 		.popup-coin__content {
-			padding: 0px 30px;
-			height: 50px;
-			min-width: 200px;
+			padding-right: 10px;
+			padding-left: 25px;
+			height: 30px;
+			min-width: 100px;
 		}
 		.popup-coin__content::before {
-			height: 20px;
+			height: 45%;
 		}
 		.popup-coin__value {
-			font-size: 25px;
+			font-size: 13px;
 		}
 		.popup-body {
 			top: 55%;
-			width: 80%;
-			max-width: 400px;
+			width: 60%;
+			min-width: 240px;
+			max-width: 300px;
 		}
 		.popup-body__bg svg {
 			width: 140%;
 			position: absolute;
 			top: 50%;
-			height: 670px;
+			height: 460px;
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
@@ -389,12 +399,43 @@
 			justify-content: center;
 		}
 		.popup-content__text {
-			font-size: 25px;
+			font-size: 16px;
 		}
 		.popup-content__title {
 			width: 100%;
 			font-size: 35px;
 			top: 25px;
+		}
+		.popup-content__coins-value {
+			font-size: 20px;
+		}
+		.popup-content__coins {
+			margin-top: 15px;
+		}
+		.popup-content__coins-icon img {
+			width: 32px;
+			transform: translateY(-1px);
+		}
+		.popup-content__btn {
+			height: 50px;
+			border-radius: 10px;
+		}
+		.popup-content__btn::before {
+			height: 45%;
+		}
+		.popup-content__timer svg {
+			width: 20px;
+			height: 20px;
+		}
+		.popup-content__text {
+			margin-top: 15px;
+		}
+		.popup-content__timer {
+			height: 40px;
+			border-radius: 10px;
+		}
+		.popup-content__btn-text {
+			font-size: 20px;
 		}
 		.popup-content__name-bg {
 			width: 100%;
@@ -409,14 +450,49 @@
 			width: 140%;
 		}
 		.popup-body__close {
-			width: 50px;
-			height: 50px;
-			top: -120px;
-			right: -25px;
+			width: 30px;
+			height: 30px;
+			top: -50px;
+			right: -30px;
 			border-radius: 10px;
 		}
 		.popup-body__close img {
-			width: 25px;
+			width: 14px;
+		}
+		.popup-body__close::before {
+			height: 45%;
+			border-radius: 5px;
+			top: 10%;
+		}
+		.popup-content__money {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		.popup-content__money img {
+			display: block;
+			width: 300px;
+			position: absolute;
+			left: 50%;
+			top: 0;
+			transform: translateX(-50%);
+		}
+		.popup-content__title {
+			font-size: 20px;
+			top: 6px;
+		}
+		.popup-content__name-bg svg {
+			height: 61px;
+		}
+		.popup-content__name {
+			height: 60px;
+			margin-top: -20px;
+		}
+		.popup-content__image {
+			margin-top: -50px;
+		}
+		.popup-content__btn::before {
+			border-radius: 5px;
 		}
 	}
 	
@@ -546,7 +622,7 @@
 						{userName}
 					</p>
 					<div class="popup-content__name-bg">
-						<svg width="535" height="109" viewBox="0 0 535 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg width="535" height="109" preserveAspectRatio="none" viewBox="0 0 535 109" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g filter="url(#filter0_i_2009_1546)">
 							<path d="M535 24C535 21.7909 533.209 20 531 20H493V107H531C533.209 107 535 105.209 535 103V102.189C535 101.733 534.922 101.28 534.769 100.85L521.5 63.5L534.775 25.6426C534.924 25.2173 535 24.7698 535 24.319V24Z" fill="#D9D9D9"/>
 							<path d="M535 24C535 21.7909 533.209 20 531 20H493V107H531C533.209 107 535 105.209 535 103V102.189C535 101.733 534.922 101.28 534.769 100.85L521.5 63.5L534.775 25.6426C534.924 25.2173 535 24.7698 535 24.319V24Z" fill="#8E0226"/>

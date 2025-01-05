@@ -48,4 +48,10 @@
       line-height: normal;
       color: #828896;
 	}
+
+  @media screen and (max-width: 650px) {
+    .popup-content__timer-value {
+      font-size: 17px;
+    }
+  }
   </style>

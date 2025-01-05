@@ -68,8 +68,8 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 98vw;
-		height: 98vh;
+		width: 99vw;
+		height: 99vh;
 		overflow: hidden;
 		border-radius: 25px;
 		box-shadow: -2.4px -2.4px 0px 0px rgba(153, 249, 249, 0.15) inset, 2.4px 2.4px 0px 0px rgba(255, 255, 255, 0.15) inset, 0px 12px 6px 0px rgba(0, 0, 0, 0.50);
